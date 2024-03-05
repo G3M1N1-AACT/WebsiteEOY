@@ -1,19 +1,29 @@
+
+/* Updated styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-size: cover;
+    background-attachment: fixed; /* Keep background image fixed */
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 header {
-    background-color: #cfcfcf;
+    background-color: #0a5766; /* Light blue */
     padding: 20px;
     text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 10px;
+    color: #ffeaca; /* Light orange */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow */
 }
 
 h2 {
@@ -26,16 +36,24 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1; /* Occupy remaining vertical space */
 }
 
 .grin {
-    width: 200px;
-    margin-bottom: 20px;
+    width: 400px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+}
+
+.dark-blue-bold {
+    font-weight: bold;
+    color: #001f3f; /* Darker blue */
 }
 
 p {
     line-height: 1.5;
     margin-bottom: 10px;
+    color: #001f3f;
+    font-weight: bolder;
 }
 
 ul {
@@ -43,28 +61,75 @@ ul {
     padding: 0;
     margin: 0;
 }
+  
 
 li {
     margin-bottom: 5px;
+    color: #386413; /* Dark green */
 }
 
 a {
-    background-color: #333;
-    color: white;
+    background-color: #ffeaca; /* Light orange */
+    color: #333; /* Dark gray */
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add button shadow */
 }
 
 a:hover {
-    background-color: #444;
+    background-color: #f5f5f5; /* Lighten on hover */
 }
 
 footer {
-    background-color: #cfcfcf;
+    background-color: #0a5766; /* Light blue */
     text-align: center;
     padding: 10px;
-    color: #333;
+    color: #333; /* Dark gray */
+    margin-top: auto; /* Push footer to bottom */
 }
 
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 20px; /* Add spacing between links */
+}
+
+.pop-up {
+    position: absolute; /* Position pop-up element */
+    background-color: #f5f5f5; /* Light background color */
+    border: 1px solid #ddd; /* Add thin border */
+    padding: 5px;
+    font-size: 12px;
+    display: none; /* Initially hide the pop-up */
+}
+
+/* Animation for Cheshire Cat grin (replace with your desired animation) */
+.grin-animation {
+    /* Add your animation styles here (e.g., rotate, scale, etc.) */
+}
+
+/* Animation for teacup shake */
+.tea-cup-shake {
+    animation: shake 0.5s linear infinite; /* Add shaking animation */
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}

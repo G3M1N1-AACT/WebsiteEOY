@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Down the Rabbit Hole - A Wonderland of Curious Delights</title>
-    <link rel="stylesheet" href="../CSS/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Down the Rabbit Hole - A Wonderland of Curious Delights</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <script src="../JAVASCRIPT/script.js"></script>
 </head>
-<body>
-    <header>
-        <h1>Down the Rabbit Hole</h1>
-        <h2>A Wonderland of Curious Delights</h2>
-    </header>
-    <main>
-        <img src="cheshire-grin.png" alt="Cheshire Cat's Grin" class="grin">
-        <p>Welcome, curious traveler, to the fantastical world of Alice in Wonderland! Here, you'll find yourself tumbling down rabbit holes, attending mad tea parties, and encountering peculiar characters, all brought to life through stories, games, and creative explorations.</p>
-        <p>Explore the labyrinthine paths of this whimsical world and discover:</p>
-        <ul>
-            <li>Interactive stories and games inspired by Alice's adventures</li>
-            <li>Creative activities to spark your imagination</li>
-            <li>Fun facts and trivia about the characters and world</li>
-            <li>A community of fellow Wonderland enthusiasts</li>
-        </ul>
-        <a href="#">Let the adventure begin!</a>
-    </main>
-    <footer>
-        <p>&copy; 2024 Down the Rabbit Hole</p>
-    </footer>
+<body onload="changeBackgroundColor()"> <header>
+    <nav>
+      <ul>
+        <br>
+        <img src="../IMAGES/AIW.jpg"><br><br><br>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Characters.html">Characters</a></li>
+        <li><a href="Games.html">Games</a></li>
+        <li><a href="Community.html">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <img src="../IMAGES/cheshire-grin.jpg" alt="Cheshire Cat's Grin" class="grin" id="cheshireGrin">
+    <p>Welcome, curious traveler, to the fantastical world of Alice in Wonderland!</p>
+    <p id="welcomeText">Here, you'll find yourself tumbling down rabbit holes, attending mad tea parties, and encountering peculiar characters, all brought to life through stories, games, and creative explorations.</p>
+    <p>Explore the labyrinthine paths of this whimsical world and discover:</p><br>
+    <ul>
+      <li><a href="stories.html">Interactive stories and games inspired by Alice's adventures</a></li><br><br>
+      <li><a href="activities.html">Creative activities to spark your imagination</a></li><br><br>
+      <li><a href="trivia.html">Fun facts and trivia about the characters and world</a></li><br><br><br>
+    </ul>
+    <li><a href="adventure.html">Let the adventures begin!</a></li>
+    <img src="../IMAGES/tea-cup-removebg-preview.png" alt="Teacup" class="teaCup" id="teaCup">
+    <audio src="../SOUNDS/tea-cup-sound.mp3" id="teaCupSound" preload="auto"></audio>
+  </main>
+  <footer>
+    <p>&copy; 2024 Down the Rabbit Hole</p>
+  </footer>
 </body>
 </html>
-
