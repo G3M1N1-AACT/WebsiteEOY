@@ -1,135 +1,179 @@
 
-/* Updated styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 0px;
     padding: 0;
+    background-image: url(../IMAGES/oldschool.jpg);
     background-size: cover;
     background-attachment: fixed; /* Keep background image fixed */
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-}
-
-header {
-    background-color: #0a5766; /* Light blue */
-    padding: 20px;
+  }
+  
+  header {
+    padding: 10px;
     text-align: center;
+    color: #fff; /* White color for text */
+    background-color: rgba(12, 1, 1, 0.5); /* Semi-transparent black background */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    position: relative; /* Ensure the header remains on top of other content */
+    z-index: 1; /* Ensure the header is above other content */
 }
 
-h1 {
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    
+}
+
+  
+  .logo {
+    width: 450px; /* Adjust width as needed */
+    height: auto; /* Maintain image aspect ratio */
+    margin-right: 30px; /* Add spacing between logo and text */
+  }
+  
+  
+  h1 {
     font-size: 3em;
     margin-bottom: 10px;
     color: #ffeaca; /* Light orange */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow */
-}
-
-h2 {
+  }
+  
+  h2 {
     font-size: 1.5em;
     color: #999;
-}
-
-main {
+  }
+  
+  main {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1; /* Occupy remaining vertical space */
+  }
+  .glow-text {
+    text-shadow:
+      0 0 5px rgba(146, 17, 17, 0.5), /* Inner white glow */
+      0 0 10px rgba(245, 35, 35, 0.2); /* Outer white glow */
+    color: #000; /* Set text color */
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .funky-box {
+    background-color: #0099cc; /* Blue background color */
+    padding: 20px; /* Add padding around the text */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+    margin: 20px; /* Add margin around the box */
 }
 
-.grin {
+  .image-container {
+    position: relative; /* Enable positioning for the text overlay */
+  }
+  
+  .text-overlay {
+    position: absolute; /* Position the text on top of the image */
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Adjust positioning as needed */
+    color: white; /* Assuming white text for contrast */
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Add padding around the text */
+    width: 80%; /* Adjust width as needed */
+  }
+  
+  
+  .grin {
     width: 400px; /* Adjust width as needed */
     height: 200px; /* Adjust height as needed */
-}
-
-.dark-blue-bold {
+  }
+  
+  .dark-blue-bold {
     font-weight: bold;
     color: #001f3f; /* Darker blue */
-}
-
-p {
+  }
+  
+  p {
     line-height: 1.5;
     margin-bottom: 10px;
     color: #001f3f;
     font-weight: bolder;
-}
-
-ul {
+  }
+  
+  ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
+  }
   
-
-li {
-    margin-bottom: 5px;
-    color: #386413; /* Dark green */
-}
-
-a {
-    background-color: #ffeaca; /* Light orange */
-    color: #333; /* Dark gray */
+  .bubble-list { /* New section for bubble list styles */
+    margin: 20px auto; /* Add margin for centering */
+  }
+  
+  .bubble-list li {
+    display: inline-block; /* Display list items side-by-side */
+    margin: 10px; /* Add spacing between items */
+    padding: 20px; /* Add padding inside each item */
+    border-radius: 50%; /* Create circular bubbles */
+    background-color: #e16d86; /* Set a light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+  }
+  
+  .bubble-list li:hover {
+    background-color: #20939c; /* Change background color on hover */
+  }
+  
+  a {
+    background-color: #ffdd77; /* Light orange */
+    color: #070000; /* Dark gray */
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: linear-gradient(#070000);
     margin-top: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add button shadow */
-}
-
-a:hover {
+  }
+  
+  a:hover {
     background-color: #f5f5f5; /* Lighten on hover */
-}
-
-footer {
-    background-color: #0a5766; /* Light blue */
+  }
+  
+  footer {
+    background-color: #0099cc; /* Light blue */
     text-align: center;
     padding: 10px;
     color: #333; /* Dark gray */
     margin-top: auto; /* Push footer to bottom */
-}
-
-/* Navigation bar styling */
-nav {
+  }
+  
+  /* Navigation bar styling */
+  nav {
     display: flex;
     justify-content: center; /* Center links horizontally */
-}
-
-nav ul {
+  }
+  
+  nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-nav li {
+  }
+  
+  nav li {
     display: inline-block; /* Display list items inline */
     margin-right: 20px; /* Add spacing between links */
-}
-
-.pop-up {
-    position: absolute; /* Position pop-up element */
-    background-color: #f5f5f5; /* Light background color */
-    border: 1px solid #ddd; /* Add thin border */
-    padding: 5px;
-    font-size: 12px;
-    display: none; /* Initially hide the pop-up */
-}
-
-/* Animation for Cheshire Cat grin (replace with your desired animation) */
-.grin-animation {
-    /* Add your animation styles here (e.g., rotate, scale, etc.) */
-}
-
-/* Animation for teacup shake */
-.tea-cup-shake {
-    animation: shake 0.5s linear infinite; /* Add shaking animation */
-}
-
-@keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(-5deg); }
-    50% { transform: rotate(5deg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0deg); }
-}
+  }
+  
+  

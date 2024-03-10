@@ -15,6 +15,10 @@ function changeBackgroundColor() {
   setTimeout(changeBackgroundColor, 3000);
 }
 
+// Call the function to start the color change
+changeBackgroundColor();
+
+
 // Add click event listener and sound effect for teacup
 const teacup = document.getElementById("teaCup");
 const teacupSound = document.getElementById("teaCupSound");
@@ -29,4 +33,13 @@ const welcomeText = document.getElementById("welcomeText");
 const popUp = document.createElement("div"); // Create pop-up element outside event listeners for better performance
 
 welcomeText.addEventListener("mouseover", () => {
-  pop
+  popUp.textContent = "Welcome text content"; // Set pop-up content (replace with your desired text)
+  popUp.style.position = "absolute"; // Position the pop-up element
+  popUp.style.top = "0"; // Adjust pop-up position as needed
+  popUp.style.left = "0"; // Adjust pop-up position as needed
+  welcomeText.appendChild(popUp); // Add pop-up to the welcomeText element
+});
+
+welcomeText.addEventListener("mouseout", () => {
+  welcomeText.removeChild(popUp); // Remove pop-up on mouseout
+});
