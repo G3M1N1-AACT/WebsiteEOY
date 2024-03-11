@@ -1,8 +1,25 @@
 
+nav {
+  display: flex;
+  justify-content: center; /* Center links horizontally */
+}
+
+nav ul {
+  margin: 0;
+  padding: 20px 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block; /* Display list items inline */
+  margin-right: 20px; /* Add spacing between links */
+  margin-bottom: 10px;
+}
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: large;
     margin: 0px;
     padding: 0;
     background-image: url(../IMAGES/oldschool.jpg);
@@ -11,19 +28,21 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+    background-image: url("../IMAGES/4.jpg"), url("../IMAGES/cheshire-grin.jpg"),url("../IMAGES/2.jpg"),url("../IMAGES/5.jpg"),url("../IMAGES/6.jpg");
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-size: cover; /* Ensure image covers the entire container */
+    background-position: center; /* Center the image horizontally and vertically */
+    }
   
   header {
-    padding: 10px;
+    padding:50px;
     text-align: center;
     color: #fff; /* White color for text */
-    background-color: rgba(12, 1, 1, 0.5); /* Semi-transparent black background */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
     position: relative; /* Ensure the header remains on top of other content */
     z-index: 1; /* Ensure the header is above other content */
   }
-
-
+  
 .text-overlay {
     position: absolute;
     top: 50%;
@@ -33,15 +52,14 @@ body {
     text-align: center;
     padding: 20px;
     width: 80%;
-    
-  }
-
-.logo {
-    width: 450px; /* Adjust width as needed */
-    height: auto; /* Maintain image aspect ratio */
-    margin-right: 30px; /* Add spacing between logo and text */
   }
   
+.logo {
+    width: 400px; /* Adjust width as needed */
+    height: auto; /* Maintain image aspect ratio */
+    margin-right: 2px; /* Add spacing between logo and text */
+    border-radius: 10px; /* Add rounded corners */
+  }
   
 h1 {
     font-size: 3em;
@@ -62,14 +80,23 @@ main {
     align-items: center;
     flex: 1; /* Occupy remaining vertical space */
   }
-.glow-text {
-    text-shadow:
-      0 0 5px rgba(146, 17, 17, 0.5), /* Inner white glow */
-      0 0 10px rgba(245, 35, 35, 0.2); /* Outer white glow */
-    color: #000; /* Set text color */
+  .glow-text {
+    
     text-align: center;
     font-size: 1.2em;
-  }
+    font-weight: bold; /* Make the text bold */
+}
+
+
+  .glow-text-container {
+    border: 7px solid #E7B280;
+    background-color: rgba(231, 178, 128, 0.5); /* Semi-transparent blue */
+    padding: 20px; /* Add padding around the content */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(239, 228, 228, 0.5); /* Add shadow effect */
+    display: inline-block; /* Ensure the container fits its content */
+}
+
 
 .funky-box {
     background-color: #0099cc; /* Blue background color */
@@ -119,19 +146,20 @@ ul {
 .bubble-list li {
     display: inline-block; /* Display list items side-by-side */
     margin: 10px; /* Add spacing between items */
-    padding: 20px; /* Add padding inside each item */
-    border-radius: 50%; /* Create circular bubbles */
-    background-color: #e16d86; /* Set a light background color */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-    transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+    padding: 15px 15px; /* Adjust padding for rectangle shape */
+    background-color: #461C89; /* Set a light background color */
+    box-shadow: 0 2px 10px rgba(144, 134, 137, 0.079); /* Add subtle shadow */
+    transition: all 0.5s ease-in-out; /* Smooth transition on hover */
+    border-radius: 10px; /* Add rounded corners */
   }
+
   
 .bubble-list li:hover {
-    background-color: #20939c; /* Change background color on hover */
+    background-color: #1C8988; /* Change background color on hover */
   }
   
 a {
-    background-color: #ffdd77; /* Light orange */
+    background-color: #D57ACE;
     color: #070000; /* Dark gray */
     padding: 10px 20px;
     border-radius: 5px;
@@ -145,29 +173,14 @@ a:hover {
   }
   
 footer {
-    background-color: #0099cc; /* Light blue */
-    text-align: center;
-    padding: 10px;
-    color: #333; /* Dark gray */
-    margin-top: auto; /* Push footer to bottom */
+  padding: 10px;
+  text-align: center;
+  color: #fff; /* White color for text */
+  background-color: rgba(0, 153, 204, 0.7); /* Semi-transparent blue */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  margin-top: auto; /* Push footer to bottom */
   }
   
-  /* Navigation bar styling */
-nav {
-    display: flex;
-    justify-content: center; /* Center links horizontally */
-  }
-  
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-nav li {
-    display: inline-block; /* Display list items inline */
-    margin-right: 20px; /* Add spacing between links */
-  }
 
   
   
