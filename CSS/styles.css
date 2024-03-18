@@ -54,10 +54,10 @@ body {
     width: 80%;
   }
   
-.logo {
-    width: 400px; /* Adjust width as needed */
-    height: auto; /* Maintain image aspect ratio */
-    margin-right: 2px; /* Add spacing between logo and text */
+  .logo {
+    width: 300px; /* Adjust width as needed */
+    height: 150px; /* Maintain image aspect ratio */
+    margin-right: 1px; /* Add spacing between logo and text */
     border-radius: 10px; /* Add rounded corners */
   }
   
