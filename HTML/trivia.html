@@ -1,0 +1,53 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Down the Rabbit Hole - A Wonderland of Curious Delights</title>
+    <link rel="stylesheet" href="../CSS/trivia.css">
+</head>
+<body>
+<header>
+    <nav aria-label="Main">
+        <img src="../IMAGES/AIW.jpg" alt="Website Logo" class="logo">
+        <div class="bubble-list">
+            <ul>
+                <p>♥ Run back home for more adventures ♥</p>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Characters.html">Characters</a></li>
+                <li><a href="Games.html">Games</a></li>
+                <li><a href="Story.html">Story</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <h2>Alice in Wonderland Trivia Game</h2>
+
+    <div class="trivia-container">
+        <p id="question"></p>
+
+        <button class="answer" id="btn0"></button>
+        <button class="answer" id="btn1"></button>
+        <button class="answer" id="btn2"></button>
+        <button class="answer" id="btn3"></button>
+    
+        <p id="result"></p>
+
+        <button class="next-btn" onclick="loadNextQuestion()">Next Question</button>    
+    </div>
+    <button class="fact-button" onclick="showFact()">Click to see a fun fact!</button>
+    <audio id="clickSound" src="../SOUNDS/magic.mp3" preload="auto"></audio>
+    <p id="funFact" class="fact-message" style="display: none;"></p>
+</main>
+<footer>
+    <p>&copy; 2024 Down the Rabbit Hole</p>
+    <p>Please drop us some of your suggestions, comments, or some magic!</p><br>
+    <a href="mailto:emleblanc12@monccnb.ca" aria-label="Email Us">Email Us</a><br><br>
+</footer>
+<script src="../JAVASCRIPT/trivia.js"></script>
+</body>
+</html>

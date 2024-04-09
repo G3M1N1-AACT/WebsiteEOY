@@ -1,0 +1,268 @@
+
+nav {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 20px 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 20px; /* Add spacing between links */
+    margin-bottom: 10px;
+  }
+  
+  body {
+      font-family: cursive;
+      font-weight: bolder;
+      font-size: large;
+      margin: 0px;
+      padding: 0;
+      background-image: url(../IMAGES/oldschool.jpg);
+      background-size: cover;
+      background-attachment: fixed; /* Keep background image fixed */
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      background-image: url("../IMAGES/4.jpg"), url("../IMAGES/cheshire-grin.jpg"),url("../IMAGES/2.jpg"),url("../IMAGES/5.jpg"),url("../IMAGES/6.jpg");
+      background-repeat: no-repeat; /* Prevent image tiling */
+      background-size: cover; /* Ensure image covers the entire container */
+      background-position: center; /* Center the image horizontally and vertically */
+      }
+    
+    header {
+      padding:50px;
+      text-align: center;
+      color: #fff; /* White color for text */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+      position: relative; /* Ensure the header remains on top of other content */
+      z-index: 1; /* Ensure the header is above other content */
+    }
+    
+  .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      width: 80%;
+    }
+    
+    .logo {
+      width: 300px; /* Adjust width as needed */
+      height: 150px; /* Maintain image aspect ratio */
+      margin-right: 2px; /* Add spacing between logo and text */
+      border-radius: 10px; /* Add rounded corners */
+    }
+    
+  h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #ffeaca; /* Light orange */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shadow */
+    }
+    
+  h2 {
+      font-size: 1.5em;
+      color: #999;
+    }
+    
+  main {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1; /* Occupy remaining vertical space */
+    }
+    .glow-text {
+      
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: bold; /* Make the text bold */
+  }
+
+  .trivia-container {
+    text-align: center;
+    background: rgba(147, 112, 219, 0.6); /* faded purple color */
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+
+  button.answer {
+    background-color: rgb(187, 30, 171);
+    color: black;
+    font-size: 18px; /* You can adjust the size as you like */
+    font-weight: bold;
+    padding: 10px; /* Adjust based on your preference */
+    border-radius: 35px; /* To have a slight round edge */
+    box-shadow: 0 0 10px rgb(187, 30, 171);
+    margin: 10px 0; /* To have a bit of space around each button */
+    min-width: 200px; /* to maintain a minimum width */
+    cursor: pointer; /* to have a pointer cursor on hover */
+}
+
+button.answer:hover{
+    background-color: rgb(0, 139, 88); /* Make button darker when hovered for better UX */
+    box-shadow: 0 0 10px rgb(0, 139, 88);
+    
+}
+
+button.next-btn {
+    background-color:rgb(0, 139, 88);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgb(0, 139, 88);
+    display: block;
+    margin: auto;
+    min-width: 200px;
+    cursor: pointer; 
+}
+
+button.next-btn:hover{
+    background-color: rgb(187, 30, 171);
+    box-shadow: 0 0 10px rgb(187, 30, 171);
+}
+
+.fact-button {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px yellow;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.fact-button:hover {
+    box-shadow: 0 0 20px yellow;
+}
+
+.fact-message {
+    background-color: yellow;
+    font-weight: bold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px yellow;
+    z-index: 10;
+}
+  
+  
+    .glow-text-container {
+      border: 7px solid #E7B280;
+      background-color: rgba(231, 178, 128, 0.5); /* Semi-transparent blue */
+      padding: 20px; /* Add padding around the content */
+      border-radius: 10px; /* Add rounded corners */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(239, 228, 228, 0.5); /* Add shadow effect */
+      display: inline-block; /* Ensure the container fits its content */
+  }
+  
+  
+  .funky-box {
+      background-color: #0099cc; /* Blue background color */
+      padding: 20px; /* Add padding around the text */
+      border-radius: 10px; /* Add rounded corners */
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+      margin: 20px; /* Add margin around the box */
+    }
+  
+  .image-container {
+      position: relative; /* Enable positioning for the text overlay */
+    }
+    
+  .text-overlay {
+      position: absolute; /* Position the text on top of the image */
+      top: 50%; /* Center the text vertically */
+      left: 50%; /* Center the text horizontally */
+      transform: translate(-50%, -50%); /* Adjust positioning as needed */
+      color: white; /* Assuming white text for contrast */
+      text-align: center; /* Center text alignment */
+      padding: 20px; /* Add padding around the text */
+      width: 80%; /* Adjust width as needed */
+    }
+    
+  .dark-blue-bold {
+      font-weight: bold;
+      color: #001f3f; /* Darker blue */
+    }
+    
+  p {
+      line-height: 1.5;
+      margin-bottom: 10px;
+      color: white;
+      font-weight: bolder;
+    }
+    
+  ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+  .bubble-list { /* New section for bubble list styles */
+      margin: 20px auto; /* Add margin for centering */
+    }
+    
+  .bubble-list li {
+      display: inline-block; /* Display list items side-by-side */
+      margin: 10px; /* Add spacing between items */
+      padding: 15px 15px; /* Adjust padding for rectangle shape */
+      background-color: #461C89; /* Set a light background color */
+      box-shadow: 0 2px 10px rgba(144, 134, 137, 0.079); /* Add subtle shadow */
+      transition: all 0.5s ease-in-out; /* Smooth transition on hover */
+      border-radius: 10px; /* Add rounded corners */
+    }
+  
+    
+  .bubble-list li:hover {
+      background-color: #1C8988; /* Change background color on hover */
+    }
+    
+  a {
+      background-color: #D57ACE;
+      color: #070000; /* Dark gray */
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: linear-gradient(#070000);
+      margin-top: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add button shadow */
+    }
+    
+  a:hover {
+      background-color: #f5f5f5; /* Lighten on hover */
+    }
+    
+  footer {
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* White color for text */
+    background-color: rgba(0, 153, 204, 0.7); /* Semi-transparent blue */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    margin-top: auto; /* Push footer to bottom */
+    }
+    
+  
+    
+    
