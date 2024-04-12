@@ -181,8 +181,6 @@ Popup Quiz
   padding: 20px;
 }
 
-/* Add this to your existing CSS file */
-
 /* Styling for the quiz pop-up */
 #quizPopup {
   position: fixed;
@@ -192,24 +190,11 @@ Popup Quiz
   background: pink;  /* Quiz pop-up background color */
   padding: 20px;
   z-index: 100;
+  box-shadow: 0 0 20px #FFC0CB;
+  transition: transform .2s, box-shadow .2s;
   display: none; /* The pop-up is hidden initially */
   border-radius: 10px;
   width: 50%; /* Adjust the width as needed */
-}
-
-/* Styling for the 'Start Quiz' button */
-.start-quiz-btn {
-  background-color: pink;
-  color: white; /* Text color, adjust accordingly */
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 #quizPopup.popup-hidden {
@@ -230,10 +215,22 @@ button {
 
 #quizButton {
   position: fixed;
-  bottom: 20px; 
+  background-color: #FFC0CB; /* Pink background */
+  border-radius: 50px; /* Round corners */
+  color: white;
+  font-weight: bolder;
+  bottom: 20px;
   right: 20px;
   padding: 10px;
   z-index: 1;
+  box-shadow: 0 0 20px #FFC0CB; /* Glow effect */
+  transition: transform .2s, box-shadow .2s; /* Transition for a smooth hover effect */
+}
+
+#quizButton:hover {
+  transform: scale(1.1); /* Scale button size to 110% when hovered */
+  box-shadow: 0 0 30px 15px #FFC0CB, /* Increase glow */
+              0 0 10px 5px #ffffff; /* Add white sparkle */
 }
 
 .scrollable {

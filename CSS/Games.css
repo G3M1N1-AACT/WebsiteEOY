@@ -80,30 +80,39 @@ nav {
       align-items: center;
       flex: 1; /* Occupy remaining vertical space */
     }
+    #gameArea {
+      position: relative;
+      height: 1200px;
+      width: 1000px;
+      background-color: rgba(128, 0, 32, 0.7);
+      border: 10px solid black;
+  }
+  
+  #cheshireCat {
+      position: absolute;
+      max-width: 400px;
+      display: hidden;  /* Cat image is initially hidden */
+  }
+  #message {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      font-size: medium;
+      color: #070000;
+  }
+  .gameLink {
+    display: block;
+    color: purple;
+    text-decoration: none;
+    box-shadow: 0 0 20px #FFC0CB;
+} 
+
     .glow-text {
       
       text-align: center;
       font-size: 1.2em;
       font-weight: bold; /* Make the text bold */
-  }
-  
-  
-    .glow-text-container {
-      border: 7px solid #E7B280;
-      background-color: rgba(231, 178, 128, 0.5); /* Semi-transparent blue */
-      padding: 20px; /* Add padding around the content */
-      border-radius: 10px; /* Add rounded corners */
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(239, 228, 228, 0.5); /* Add shadow effect */
-      display: inline-block; /* Ensure the container fits its content */
-  }
-  
-  
-  .funky-box {
-      background-color: #0099cc; /* Blue background color */
-      padding: 20px; /* Add padding around the text */
-      border-radius: 10px; /* Add rounded corners */
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); /* Add shadow effect */
-      margin: 20px; /* Add margin around the box */
     }
   
   .image-container {
