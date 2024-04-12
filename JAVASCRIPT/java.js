@@ -23,3 +23,43 @@ backgroundButtons.forEach((button, index) => {
     changeBackground(index);
   });
 });
+
+// JavaScript for Footer enhancement
+let currentYear = new Date().getFullYear(); // Get current year
+
+// Select the copyright element by its new id
+let copyrightElement = document.querySelector('#copyright');
+
+// Replace '2024' with current year
+copyrightElement.innerText = ` ${currentYear} Down the Rabbit Hole`;
+
+let emailField = document.querySelector('#userEmail'); // ID of the email input field in your form
+let form = document.querySelector('#emailForm'); // ID of your form
+
+form.addEventListener('submit', function(event) {
+  let email = emailField.value; // get input value
+  let regex = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/; // basic regex for email validation
+
+  if (!regex.test(email)) {
+      alert('Please enter a valid email address.');
+      event.preventDefault(); // prevent form from submitting
+  }
+});
+
+window.onload = function() {
+  var i = 0;
+  var txt = 'Play with your own imagination! Click & choose your own background.'; /* The text */
+  var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("main-title").innerHTML = txt.slice(0, i+1);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  // Initiate typewriter effect
+  typeWriter();
+}
+
