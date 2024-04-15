@@ -13,7 +13,11 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-image: url("../IMAGES/4.jpg"), url("../IMAGES/cheshire-grin.jpg"),url("../IMAGES/2.jpg"),url("../IMAGES/5.jpg"),url("../IMAGES/6.jpg");
+  background-image: url("../IMAGES/4.jpg"), 
+                    url("../IMAGES/cheshire-grin.jpg"),
+                    url("../IMAGES/2.jpg"),
+                    url("../IMAGES/5.jpg"),
+                    url("../IMAGES/6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
