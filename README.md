@@ -15,6 +15,7 @@ Story: Take part in Alice's adventure through an interactive storytelling experi
 Choosing Your Own Background Interaction: Customize your Wonderland journey by selecting unique backgrounds for your experience.
 The Ancient - Movies: Enjoy the older versions of Alice in Wonderland.
 Fun Facts and Trivia: Learn more about the creation of "Alice in Wonderland", with trivia and fascinating facts.
+Music: Music from Alice in Wonderland throughout the main pages so make sure to allow on your end to have the full experience!
 
 Accessibility Features
 
